@@ -32,8 +32,8 @@
   
     <tr th:each="dosen : ${listDosen}">
       <td scope="row" th:text="${dosen.idDosen}"></td>
-      <td th:text="${dosen.namaDosen}"></td>
       <td th:text="${dosen.username}"></td>
+      <td th:text="${dosen.namaDosen}"></td>
      
       <td>
          <a th:href="@{/dosen/update/{id}(id=${dosen.idDosen})}" class="btn btn-primary btn-sm" tabindex="-1" role="button" ><i class="fa fa-folder" ></i> Update </a>

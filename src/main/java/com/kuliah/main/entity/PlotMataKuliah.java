@@ -42,6 +42,17 @@ public class PlotMataKuliah {
 	 @OneToMany(cascade = CascadeType.ALL)
 	 @JoinColumn(name="id_plotmatakuliah", referencedColumnName = "idPlotMataKuliah")
 	private List<Soal> lstSoal = new ArrayList<Soal>();
-	
+	 
+	 @OneToMany(cascade = CascadeType.ALL)
+     @JoinColumn(name="id_plotmatakuliah", referencedColumnName = "idPlotMataKuliah")
+    private List<Mahasiswa> lstMahasiswa = new ArrayList<Mahasiswa>();
+     
+     @OneToMany(cascade = CascadeType.ALL)
+     @JoinColumn(name="id_plotmatakuliah", referencedColumnName = "idPlotMataKuliah")
+    private List<Dosen> lstDosen = new ArrayList<Dosen>();
+     
+     @OneToMany(cascade = CascadeType.ALL)
+     @JoinColumn(name="id_plotmatakuliah", referencedColumnName = "idPlotMataKuliah")
+    private List<MataKuliah> lstMataKuliah = new ArrayList<MataKuliah>();
 	
 }
